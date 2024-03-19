@@ -1,0 +1,229 @@
+body{
+    background-color: #F3F5FC;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*HEADER OK*/
+.header{
+    height: 48px;
+    width: 120px;
+    margin-top: 40px;
+    margin-left: 40px;
+    /*border: 1px solid black;*/
+}
+
+/*MAIN OK*/
+.main{
+    display: flex;
+    align-items: center;
+}
+
+/*CUADRO-TEXTO OK*/
+.cuadro_texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 670px;
+    width: 720px;
+    margin-left: 220px;
+    margin-right: 60px;
+    /*border: 1px solid black;*/
+    border-radius: 32px;
+    background-color: rgb(255, 255, 255);
+}
+
+/*EXCLAMACION OK*/
+.exclamacion{
+    font-size: 12px;
+    color: #495057;
+    margin-left: 240px;
+}
+
+/*SECCION S2 OK*/
+.s2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 944px;
+    width: 400px;
+    /*border: 1px solid black;*/
+    border-radius: 32px;
+    background-color: rgb(255, 255, 255);
+}
+
+/*MENSAJE AJUSTADO DESPUES DE ENCRIPTAR*/
+.s2.ajustado{
+    justify-content: space-evenly;
+}
+
+/*TEXTO-INGRESADO OK*/
+#texto_ingresado{
+    height: 630px;
+    width: 680px;
+    border-radius: 32px;
+    border: none;
+    font-size: 32px;
+    padding: 20px;
+    color: #0A3871;
+    resize: none;
+}
+
+/*MUÑECO OK*/
+.muñeco{
+    margin-top: 243px;
+}
+
+/*MENSAJE OK*/
+.mensajeFinal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58px;
+    width: 336px;
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*MENSAJE AJUSTADO DESPUES DE ENCRIPTAR*/
+.mensajeFinal.ajustado{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 67%;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    margin-top: 0px;
+}
+
+/*TEXTO-INGRESADO OK*/
+.textoIngresa{
+    height: 48px;
+    width: 336px;
+    margin-top: 16px;
+    font-size: 16px;
+    margin-bottom: 88px;
+    text-align: center;
+}
+
+/*BOTONES OK*/
+.botones{
+    height: 67px;
+    width: 680px;
+    display: flex;
+    justify-content: center;
+    margin-left: 240px;
+    margin-right: 24px;
+    justify-content: space-between;
+}
+
+/*BOTON ENCRIPTAR OK*/
+.button_E{
+    height: 67px;
+    width: 328px;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+/*BOTON DESENCRIPTAR OK*/
+.button_D{
+    height: 67px;
+    width: 328px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+/*BOTON COPIAR*/
+.button_C{
+    height: 67px;
+    width: 336px;
+    background-color: #ffffff;
+    color: #0A3871;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    display: none;
+}
+
+.footer{
+    font-size: 12px;
+    color: #0A3871;
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+
+    .header{
+        margin-left: 0px;
+    }
+
+    .muñeco {
+        display: none;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 768px;
+        height: 1174px;
+    }
+
+    .cuadro_texto{
+        width: 488px;
+        height: 472px;
+        margin-left: 20px;
+    }
+
+    .botones{
+        width: 488px;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+
+    #texto_ingresado{
+        height: auto;
+        height: 472px;
+    }
+
+    .exclamacion{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    .button_E{
+        width: 200px;
+    }
+
+    .button_D{
+        width: 200px;
+    }
+
+    .button_C{
+        width: 200px;
+        display: none;
+    }
+
+    .s2{
+        height: auto;
+        width: 488px;
+        margin-bottom: 50px;
+        margin-right: 40px;
+    }
+
+    .mensajeFinal.ajustado{
+        margin-top: 20px;
+        height: 300px;
+    }
+
+
+}
